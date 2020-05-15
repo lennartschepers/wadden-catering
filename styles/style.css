@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+h2 {
+	font-family: 'Great Vibes', cursive;
+	@apply text-4xl;
+	color: #c5ab6b;
+}
+
+.alt-font {
+	font-family: 'Raleway', cursive;
+	color: #c5ab6b;
+}
