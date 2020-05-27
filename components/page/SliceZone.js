@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Menu, Photogallery } from "./slices";
+import { Text, Menu, Photogallery, Hero, TextWithImage } from "./slices";
 
 /**
  * Post slice zone component
@@ -11,8 +11,12 @@ const SliceZone = ({ sliceZone }) =>
         return <Menu slice={slice} key={`slice-${index}`} />;
       case "tekstblok":
         return <Text slice={slice} key={`slice-${index}`} />;
+      case "tekst_met_foto":
+        return <TextWithImage slice={slice} key={`slice-${index}`} />;
       case "foto_galerij":
         return <Photogallery slice={slice} key={`slice-${index}`} />;
+      case "hero":
+        return <Hero slice={slice} key={`slice-${index}`} />;
       default:
         return null;
     }

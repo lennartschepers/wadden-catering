@@ -1,3 +1,5 @@
 export { default as Text } from './Text'
 export { default as Menu } from './Menu'
 export { default as Photogallery } from './Photogallery'
+export { default as Hero } from './Hero'
+export { default as TextWithImage } from './TextWithImage'

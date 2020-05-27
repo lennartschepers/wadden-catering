@@ -11,8 +11,8 @@ const Menu = ({ slice }) => (
       {RichText.render(slice.primary.menu_omschrijving)}
     </div>
     <section className="grid gap-6 md:grid-cols-2 ">
-      {slice.items.map((menu_item) => (
-        <div className="flex py-4 border-dashed border-t border-gray-400">
+      {slice.items.map((menu_item, index) => (
+        <div className="flex py-4 border-dashed border-t border-gray-400" key={index}>
           <div className="flex-1">
             <p className="font-bold text-lg">
               {RichText.asText(menu_item.naam)}

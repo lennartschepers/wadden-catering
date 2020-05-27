@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { RichText } from "prismic-reactjs";
-import { SliceZone } from "components/page"
+import { SliceZone } from "components/page";
 
 import { queryRepeatableDocuments } from "utils/queries";
 
@@ -16,10 +16,13 @@ import { Client } from "utils/prismicHelpers";
  */
 const Page = ({ page }) => {
   if (page) {
+    const hasTitle = RichText.asText(page.data.pagina_titel).length !== 0;
+    const title = hasTitle ? RichText.asText(page.data.pagina_titel) : "Untitled";
+
     return (
       <DefaultLayout>
         <Head>
-          <title>{RichText.asText(page.data.pagina_titel)}</title>
+          <title>{title}</title>
         </Head>
         <div className="container mx-auto">
           <SliceZone sliceZone={page.data.body} />
@@ -27,6 +30,7 @@ const Page = ({ page }) => {
       </DefaultLayout>
     );
   }
+  return "404";
 };
 
 export async function getStaticProps({ params }) {
