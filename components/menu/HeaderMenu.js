@@ -7,10 +7,10 @@ const HeaderMenu = ({ pages }) => {
       <menu className="m-0 p-0 grid gap-8 grid-flow-col">
         {pages.map((page) => (
           <Link href="[uid]" as={`/${page.uid}`} key={`${page.uid}`}>
-            <a className="py-3 px-4">{page.uid}</a>
+            <a className="py-3 px-4 capitalize">{page.uid}</a>
           </Link>
         ))}
-          <a className="bg-brown text-white py-3 px-4" href="#">Reserveren</a>
+          <a className="bg-brown text-white py-3 px-4 rounded-md" href="#">Reserveren</a>
       </menu>
     );
   }

@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         brown: "#c5ab6b",
+        darkBrown: "#131313",
       },
       height: {
         "50-screen": "50vh",
