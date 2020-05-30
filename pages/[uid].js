@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { RichText } from "prismic-reactjs";
 import { SliceZone } from "components/page";
+import Prismic from "prismic-javascript";
 
 import { queryRepeatableDocuments } from "utils/queries";
 
@@ -14,13 +15,15 @@ import { Client } from "utils/prismicHelpers";
 /**
  * Post page component
  */
-const Page = ({ page }) => {
-  if (page) {
+const Page = ({ page, pages }) => {
+  if (page && pages) {
     const hasTitle = RichText.asText(page.data.pagina_titel).length !== 0;
-    const title = hasTitle ? RichText.asText(page.data.pagina_titel) : "Untitled";
+    const title = hasTitle
+      ? RichText.asText(page.data.pagina_titel)
+      : "Untitled";
 
     return (
-      <DefaultLayout>
+      <DefaultLayout pages={pages}>
         <Head>
           <title>{title}</title>
         </Head>
@@ -34,10 +37,18 @@ const Page = ({ page }) => {
 };
 
 export async function getStaticProps({ params }) {
-  const page = await Client().getByUID("paginas", params.uid);
+  const client = Client();
+
+  const pages = await client.query(
+    Prismic.Predicates.at("document.type", "paginas")
+  );
+
+  const page = await client.getByUID("paginas", params.uid);
+
   return {
     props: {
       page,
+      pages: pages ? pages.results : [],
     },
   };
 }
