@@ -27,9 +27,7 @@ const Page = ({ page, pages }) => {
         <Head>
           <title>{title}</title>
         </Head>
-        <div className="container mx-auto">
-          <SliceZone sliceZone={page.data.body} />
-        </div>
+        <SliceZone sliceZone={page.data.body} />
       </DefaultLayout>
     );
   }
