@@ -48,7 +48,7 @@ const Footer = () => (
     <div
       className="ft-widget-b2"
       data-restaurant="618e6e7e"
-      data-open="1500"
+      data-open="false"
       data-open-mobile="false"
       data-color="#C5AB6B"
       data-language="nl"

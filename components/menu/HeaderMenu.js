@@ -10,7 +10,7 @@ const HeaderMenu = ({ pages }) => {
             <a className="py-3 px-4 ">{page.uid}</a>
           </Link>
         ))}
-        <a className="bg-brown text-white py-3 px-4 rounded-md" href="#">
+        <a className="bg-brown text-white py-3 px-4 rounded-md" href="#ft-open">
           Reserveren
         </a>
         <p>Bel: +31 (0)6 12 06 93 80</p>
