@@ -9,15 +9,16 @@ import Link from "next/link";
 const DefaultLayout = ({ children, pages }) => (
   <div>
     <Meta />
-    <header className="absolute top-0 left-0 w-full z-50 bg-black text-white bg-opacity-75">
+    <header className="w-full absolute top-0 left-0 z-50 bg-black text-white bg-opacity-75 overflow-hidden">
       <div className="container flex mx-auto py-4">
         <div className="flex-1">
           <Link href="/">
             <a>
-              <img src="/images/logoWit.png" className="h-12" />
+              <img src="/images/logoWit.png" className="h-12 ml-2 md:ml-0" />
             </a>
           </Link>
         </div>
+        
         <HeaderMenu pages={pages} />
       </div>
     </header>

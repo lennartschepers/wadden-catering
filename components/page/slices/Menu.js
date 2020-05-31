@@ -5,7 +5,7 @@ import { RichText } from "prismic-reactjs";
  * Menu slice component
  */
 const Menu = ({ slice }) => (
-  <div className="container mx-auto">
+  <div className="container mx-auto px-4">
     <div className="py-16">
       <div className="text-center mb-8">
         {RichText.render(slice.primary.menu_naam)}

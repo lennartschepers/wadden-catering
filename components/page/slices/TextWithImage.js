@@ -7,12 +7,12 @@ import { customLink } from "utils/prismicHelpers";
  * Text slice component
  */
 const TextWithImage = ({ slice }) => (
-  <div className="container mx-auto grid grid-cols-3 gap-8 py-16">
+  <div className="container mx-auto md:grid grid-cols-3 gap-8 py-16">
     <div className="col-span-1">
       {slice.items.map((image) => {
         return (
           <img
-            className="w-auto"
+            className="w-auto hidden md:block"
             alt={image.tekst_fotos.alt}
             src={image.tekst_fotos.url}
           />

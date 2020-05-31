@@ -10,20 +10,20 @@ const Footer = () => (
         <img src="/images/logoWit.png" className="h-16 mx-auto mb-12" />
 
         <div className="md:grid grid-cols-3">
-          <div>
+          <div className="pb-8 md:pb-0">
             <p className="font-bold">Openingstijden </p>
             <p>Drive-in / Afhaalmenu</p>
             <p>Donderdag tot en met maandag</p>
             <p>Van 17:00 tot 20:00 uur</p>
             <p>Zaterdag en zondag lunch vanaf 12:00 uur</p>
           </div>
-          <div>
+          <div className="pb-8 md:pb-0">
             <p className="font-bold">Locatie</p>
             <p>Jachthaven Lauwersmeer, Oostmahorn 31, Anjum</p>
             <p>Parkeren naast de deur (Rolstoeltoegankelijk)</p>
           </div>
           <div>
-            <p className="font-bold">Reserveringsnummer:</p>
+            <p className="font-bold">Reserveringsnummer</p>
             <p className="text-brown underline">+31 (0) 6 120 693 80</p>
           </div>
         </div>

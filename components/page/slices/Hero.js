@@ -12,7 +12,7 @@ const Hero = ({ slice }) => (
       alt={slice.primary.homepage_header.alt}
     />
 
-    <div className="w-1/2 leading-loose text-white text-center z-10">
+    <div className="w-11/12 md:w-1/2 leading-loose text-white text-center z-10">
       <h1>{RichText.asText(slice.primary.header_titel)}</h1>
       {RichText.render(slice.primary.header_tekst)}
 
