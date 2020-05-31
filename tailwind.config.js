@@ -1,11 +1,4 @@
 module.exports = {
-  purge: {
-    mode: 'all',
-    content: [
-      'pages/**/*',
-      'components/**/*',
-    ],
-  },
   important: true,
   theme: {
     extend: {
