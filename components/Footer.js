@@ -24,7 +24,7 @@ const Footer = () => (
           </div>
           <div>
             <p className="font-bold">Reserveringsnummer</p>
-            <p className="text-brown underline">+31 (0) 6 120 693 80</p>
+            <p className="text-brown underline"><a href="tel:+31612069380">+31 (0) 6 120 693 80</a></p>
           </div>
         </div>
       </div>

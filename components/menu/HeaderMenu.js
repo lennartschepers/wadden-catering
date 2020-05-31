@@ -39,7 +39,7 @@ const HeaderMenu = ({ pages }) => {
           >
             Reserveren
           </a>
-          <p>Bel: +31 (0)6 12 06 93 80</p>
+          <p><a href="tel:+31612069380">Bel: +31 (0)6 12 06 93 80</a></p>
         </menu>
       </div>
     );
