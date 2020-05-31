@@ -2,11 +2,8 @@ module.exports = {
   purge: {
     mode: 'all',
     content: [
-      './src/**/*.js',
-      './pages/**/*.js',
-      './node_modules/next/dist/pages/**/*.js',
-      './node_modules/next/dist/pages/**/*.ts',
-      './node_modules/next/dist/pages/**/*.ts',
+      'pages/**/*',
+      'components/**/*',
     ],
   },
   important: true,
