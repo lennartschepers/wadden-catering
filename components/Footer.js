@@ -7,7 +7,7 @@ const Footer = () => (
   <footer>
     <div className="bg-darkBrown w-full py-16 text-white text-center leading-loose">
       <div className="container mx-auto">
-        <img src="/images/logoWit.png" className="h-16 mx-auto mb-12" />
+        <img src="/images/logoWit.png" alt="Logo van Het Raadsel van de Wadden" className="h-16 mx-auto mb-12" />
 
         <div className="md:grid grid-cols-3">
           <div className="pb-8 md:pb-0">

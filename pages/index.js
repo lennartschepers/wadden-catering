@@ -32,21 +32,27 @@ const Home = ({ doc, pages }) => {
 /**
  * Query the homepage document and blog posts from Prismic when the page is loaded
  */
-export async function getStaticProps() {
+export async function getStaticProps({ preview = null, previewData = {} }) {
   const client = Client();
 
+  const { ref } = previewData
+
+
   // Retrieve the homepage document
-  const doc = await client.getSingle("homepage");
+  const doc = await client.getSingle("homepage", ref ? { ref } : null);
 
   // Retrieve the blog posts organized in descending chronological order
   const pages = await client.query(
-    Prismic.Predicates.at("document.type", "paginas")
+    Prismic.Predicates.at("document.type", "paginas"), {
+      ...(ref ? { ref } : null)
+    }
   );
 
   return {
     props: {
       doc,
       pages: pages ? pages.results : [],
+      preview
     },
   };
 }
