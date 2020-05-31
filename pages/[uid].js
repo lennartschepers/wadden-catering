@@ -34,17 +34,20 @@ const Page = ({ page, pages }) => {
   return "404";
 };
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, preview = null, previewData = {} }) {
   const client = Client();
+  const { ref } = previewData
+
 
   const pages = await client.query(
     Prismic.Predicates.at("document.type", "paginas")
   );
 
-  const page = await client.getByUID("paginas", params.uid);
+  const page = await client.getByUID("paginas", params.uid, ref ? { ref } : null);
 
   return {
     props: {
+      preview,
       page,
       pages: pages ? pages.results : [],
     },
