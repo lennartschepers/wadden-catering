@@ -17,15 +17,18 @@ import { Client } from "utils/prismicHelpers";
  */
 const Page = ({ page, pages }) => {
   if (page && pages) {
-    const hasTitle = RichText.asText(page.data.pagina_titel).length !== 0;
-    const title = hasTitle
-      ? RichText.asText(page.data.pagina_titel)
-      : "Untitled";
-
     return (
       <DefaultLayout pages={pages}>
         <Head>
-          <title>{title}</title>
+          <title>{page.data.seo_title}</title>
+          <meta property="og:title" content={page.data.seo_title} />
+          <meta property="og:type" content="restaurant" />
+          <meta property="og:description" content={page.data.seo_description} />
+          <meta property="og:image" content={page.data.seo_image.url} />
+          <meta property="twitter:title" content={page.data.seo_title} />
+          <meta name="twitter:card" content="summary" />
+          <meta property="twitter:description" content={page.data.seo_description} />
+          <meta property="twitter:image" content={page.data.seo_image.url} />
         </Head>
         <SliceZone sliceZone={page.data.body} />
       </DefaultLayout>
@@ -34,16 +37,23 @@ const Page = ({ page, pages }) => {
   return "404";
 };
 
-export async function getStaticProps({ params, preview = null, previewData = {} }) {
+export async function getStaticProps({
+  params,
+  preview = null,
+  previewData = {},
+}) {
   const client = Client();
-  const { ref } = previewData
-
+  const { ref } = previewData;
 
   const pages = await client.query(
     Prismic.Predicates.at("document.type", "paginas")
   );
 
-  const page = await client.getByUID("paginas", params.uid, ref ? { ref } : null);
+  const page = await client.getByUID(
+    "paginas",
+    params.uid,
+    ref ? { ref } : null
+  );
 
   return {
     props: {

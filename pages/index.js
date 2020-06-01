@@ -17,7 +17,16 @@ const Home = ({ doc, pages }) => {
     return (
       <DefaultLayout pages={pages}>
         <Head>
-          <title>{RichText.asText(doc.data.page_title)}</title>
+          <title>{doc.data.seo_title}</title>
+          <meta name="description" content={doc.data.seo_description} />
+          <meta property="og:title" content={doc.data.seo_title} />
+          <meta property="og:type" content="restaurant" />
+          <meta property="og:description" content={doc.data.seo_description} />
+          <meta property="og:image" content={doc.data.seo_image.url} />
+          <meta property="twitter:title" content={doc.data.seo_title} />
+          <meta name="twitter:card" content="summary" />
+          <meta property="twitter:description" content={doc.data.seo_description} />
+          <meta property="twitter:image" content={doc.data.seo_image.url} />
         </Head>
     
         <SliceZone sliceZone={doc.data.body} />
