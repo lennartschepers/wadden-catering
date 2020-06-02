@@ -16,10 +16,10 @@ const Footer = () => (
         <div className="md:grid grid-cols-3">
           <div className="pb-8 md:pb-0">
             <p className="font-bold">Openingstijden </p>
-            <p>Drive-in / Afhaalmenu</p>
-            <p>Donderdag tot en met maandag</p>
-            <p>Van 17:00 tot 20:00 uur</p>
-            <p>Zaterdag en zondag lunch vanaf 12:00 uur</p>
+            <p>Maandag t/m vrijdag</p>
+            <p>Van 17:00 tot 22:00 uur</p>
+            <p>Zaterdag en zondag lunch</p>
+            <p>Van 12:00 tot 22:00 uur</p>
           </div>
           <div className="pb-8 md:pb-0">
             <p className="font-bold">Locatie</p>
@@ -62,8 +62,6 @@ const Footer = () => (
       data-toolbar="true"
       data-toolbar-mobile="true"
     ></div>
-
-
   </footer>
 );
 
