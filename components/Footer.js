@@ -18,7 +18,7 @@ const Footer = () => (
             <p className="font-bold">Openingstijden </p>
             <p>Maandag t/m vrijdag</p>
             <p>Van 15:00 tot 22:00 uur</p>
-            <p>Zaterdag en zondag lunch</p>
+            <p>Zaterdag en zondag</p>
             <p>Van 12:00 tot 22:00 uur</p>
           </div>
           <div className="pb-8 md:pb-0">
