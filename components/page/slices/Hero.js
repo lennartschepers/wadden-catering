@@ -19,7 +19,7 @@ const Hero = ({ slice }) => (
       <div className="flex space-x-3 justify-center py-4">
         {slice.items.map((button, key) => (
           <a
-            className="rounded-full shadow-xs py-2 px-4 bg-brown hover:shadow-md duration-200 transition-all"
+            className="rounded-full shadow-xs py-2 px-4 bg-white text-gray-900 hover:shadow-lg hover:bg-brown hover:text-white duration-200 transition-all"
             href={button.buttons[0].spans[0].data.url.replace(
               /^https?:\/\//,
               ""

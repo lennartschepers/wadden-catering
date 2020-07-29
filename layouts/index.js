@@ -13,8 +13,8 @@ const DefaultLayout = ({ children, pages }) => (
       <div className="container flex mx-auto py-4 px-4 justify-between">
         <div>
           <Link href="/">
-            <a>
-              <img src="/images/logoWit.png" className="h-12 ml-2 md:ml-0" />
+            <a aria-label="Link naar de homepagina">
+              <img alt="Logo van Het Raadsel van de Wadden" src="/images/logoWit.png" className="h-12 ml-2 md:ml-0" />
             </a>
           </Link>
         </div>

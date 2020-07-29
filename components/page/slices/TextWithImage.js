@@ -21,7 +21,7 @@ const TextWithImage = ({ slice }) => (
       })}
     </div>
     <div className="col-span-2 text-gray-800 leading-relaxed px-8">
-      <h2>{RichText.render(slice.primary.title)}</h2>
+      <h2>{RichText.asText(slice.primary.title)}</h2>
       {RichText.render(slice.primary.homepage_tekst)}
     </div>
   </div>

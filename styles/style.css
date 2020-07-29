@@ -4,16 +4,16 @@
 
 h1 {
   @apply text-5xl;
-  color: #c5ab6b;
+  color: #b19551;
 }
 
 h2 {
   font-family: "Great Vibes", cursive;
   @apply text-4xl;
-  color: #c5ab6b;
+  color: #826828;
 }
 
 .alt-font {
   font-family: "Raleway", cursive;
-  color: #c5ab6b;
+  color: #826828;
 }
