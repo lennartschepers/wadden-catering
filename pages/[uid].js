@@ -61,6 +61,7 @@ export async function getStaticProps({
       page,
       pages: pages ? pages.results : [],
     },
+    revalidate: 1
   };
 }
 
