@@ -16,6 +16,7 @@ const Footer = () => (
         <div className="md:grid grid-cols-3">
           <div className="pb-8 md:pb-0">
             <p className="font-bold">Openingstijden </p>
+            <p>LET OP: 24 & 25 augustus gesloten</p>
             <p>Maandag t/m donderdag</p>
             <p>Van 16:00 tot 22:00 uur</p>
             <p>Vrijdag, zaterdag en zondag</p>
