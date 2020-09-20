@@ -15,9 +15,8 @@ const HeaderMenu = ({ pages }) => {
           Menu
         </button>
         <menu
-          className={`${
-            toggleClass ? "translate-x-0" : "translate-x-full"
-          } transition-all duration-200 transform fixed right-0 top-0 text-brown flex flex-col p-8 md:p-0 md:text-white h-screen w-2/3 bottom-0 shadow-lg md:shadow-none bg-white md:bg-transparent md:w-auto md:translate-x-0 md:h-auto md:relative m-0 md:grid md:gap-8 grid-flow-col md:items-center capitalize z-10`}
+          className={`${toggleClass ? "translate-x-0" : "translate-x-full"
+            } transition-all duration-200 transform fixed right-0 top-0 text-brown flex flex-col p-8 md:p-0 md:text-white h-screen w-2/3 bottom-0 shadow-lg md:shadow-none bg-white md:bg-transparent md:w-auto md:translate-x-0 md:h-auto md:relative m-0 md:grid md:gap-8 grid-flow-col md:items-center capitalize z-10`}
         >
           <button
             onClick={() => setToggleClass(false)}
@@ -39,7 +38,7 @@ const HeaderMenu = ({ pages }) => {
           >
             Reserveren
           </a>
-          <p><a href="tel:+31612069380">Bel: +31 (0)6 12 06 93 80</a></p>
+          <p><a href="tel:+31851309156">+31 (0)85 13 09 156</a></p>
         </menu>
       </div>
     );
