@@ -31,6 +31,10 @@ const Footer = () => (
             <p className="text-brown underline">
               <a href="tel:+31851309156">+31 (0)85 13 09 156</a>
             </p>
+            <p className="font-bold">Emailadres</p>
+            <p className="text-brown underline">
+              <a href="mailto:info@hetraadsel.nl">info@hetraadsel.nl</a>
+            </p>
           </div>
         </div>
       </div>
