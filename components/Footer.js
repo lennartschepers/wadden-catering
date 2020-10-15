@@ -16,10 +16,7 @@ const Footer = () => (
         <div className="md:grid grid-cols-3">
           <div className="pb-8 md:pb-0">
             <p className="font-bold">Openingstijden </p>
-            <p>Maandag, woensdag t/m vrijdag</p>
-            <p>Van 16:00 tot 22:00 uur</p>
-            <p>Zaterdag en zondag</p>
-            <p>Van 12:00 tot 22:00 uur</p>
+            <p>Alleen open voor afhaal</p>
           </div>
           <div className="pb-8 md:pb-0">
             <p className="font-bold">Locatie</p>
@@ -29,6 +26,7 @@ const Footer = () => (
           <div>
             <p className="font-bold">Reserveringsnummer</p>
             <p className="text-brown underline">
+
               <a href="tel:+31851309156">+31 (0)85 13 09 156</a>
             </p>
             <p className="font-bold">Emailadres</p>
