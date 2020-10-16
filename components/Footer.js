@@ -24,6 +24,7 @@ const Footer = () => (
             <p>Parkeren naast de deur (Rolstoeltoegankelijk)</p>
           </div>
           <div>
+            
             <p className="font-bold">Reserveringsnummer</p>
             <p className="text-brown underline">
 
