@@ -24,7 +24,6 @@ const Footer = () => (
             <p>Parkeren naast de deur (Rolstoeltoegankelijk)</p>
           </div>
           <div>
-            
             <p className="font-bold">Reserveringsnummer</p>
             <p className="text-brown underline">
 
@@ -38,8 +37,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    
-  
+
     <script
       dangerouslySetInnerHTML={{
         __html: `setTimeout(() => {(function (d, s, id, h) {
