@@ -10,6 +10,8 @@ const Text = ({ slice }) => (
   <div className="relative w-full h-96 flex justify-center text-center items-center bg-darkBrown">
     <img
       src="./images/menuBackground.jpg"
+      loading="lazy"
+
       className="absolute w-full h-96 object-cover mb-12 opacity-50"
     />
     <div className="z-10 pt-12">

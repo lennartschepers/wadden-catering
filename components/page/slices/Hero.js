@@ -8,6 +8,7 @@ const Hero = ({ slice }) => (
   <div className="relative flex justify-center items-center bg-black">
     <img
       className="absolute w-full h-full object-cover opacity-50"
+      loading="lazy"
       src={slice.primary.homepage_header.hero.url}
       alt={slice.primary.homepage_header.alt}
     />

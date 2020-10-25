@@ -14,7 +14,7 @@ const DefaultLayout = ({ children, pages }) => (
         <div>
           <Link href="/">
             <a aria-label="Link naar de homepagina">
-              <img alt="Logo van Het Raadsel van de Wadden" src="/images/logoWit.png" className="h-12 ml-2 md:ml-0" />
+              <img alt="Logo van Het Raadsel van de Wadden" src="/images/logoWit.png" loading="lazy" className="h-12 ml-2 md:ml-0" />
             </a>
           </Link>
         </div>

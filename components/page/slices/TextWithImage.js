@@ -14,6 +14,8 @@ const TextWithImage = ({ slice }) => (
           <img
             className="w-auto hidden md:block"
             alt={image.tekst_fotos.alt}
+            loading="lazy"
+
             src={image.tekst_fotos.url}
             key={index}
           />

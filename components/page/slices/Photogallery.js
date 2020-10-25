@@ -9,6 +9,8 @@ const Photogallery = ({ slice }) => (
       {slice.items.map((image, imageIndex) => (
         <img
           className="w-auto"
+          loading="lazy"
+
           alt={image.galerij_foto.alt}
           src={image.galerij_foto.formatted.url}
         />

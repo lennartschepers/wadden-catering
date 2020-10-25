@@ -9,6 +9,7 @@ const Footer = () => (
       <div className="container mx-auto">
         <img
           src="/images/logoWit.png"
+          loading="lazy"
           alt="Logo van Het Raadsel van de Wadden"
           className="h-16 mx-auto mb-12"
         />
