@@ -17,6 +17,9 @@ const Meta = () => {
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GDY9MLM5YT"></script>
+
         <meta
           name="application-name"
           content="Restaurant Het Raadsel van de Wadden"
@@ -64,7 +67,10 @@ const Meta = () => {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://restaurantlauwersmeer.nl" />
-        <meta name="twitter:title" content="Restaurant Het Raadsel van de Wadden" />
+        <meta
+          name="twitter:title"
+          content="Restaurant Het Raadsel van de Wadden"
+        />
         <meta
           name="twitter:description"
           content="Restaurant Het Raadsel van de Wadden"
@@ -116,6 +122,17 @@ const Meta = () => {
               "telephone": "+31(0)851309156",
               "url": "https://restaurantlauwersmeer.nl"
             }`,
+          }}
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GDY9MLM5YT');
+        `,
           }}
         />
       </Head>
