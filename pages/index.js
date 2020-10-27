@@ -1,13 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import Prismic from "prismic-javascript";
-import { RichText } from "prismic-reactjs";
 
-import { SliceZone } from "components/page";
+import { SliceZone } from "../components/page";
 
 // Project components & functions
-import DefaultLayout from "layouts";
-import { Client } from "utils/prismicHelpers";
+import DefaultLayout from "../layouts";
+import { Client } from "../utils/prismicHelpers";
 
 /**
  * Homepage component

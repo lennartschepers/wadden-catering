@@ -1,16 +1,15 @@
 import React from "react";
 import Head from "next/head";
-import { RichText } from "prismic-reactjs";
-import { SliceZone } from "components/page";
+import { SliceZone } from "../components/page";
 import Prismic from "prismic-javascript";
 
-import { queryRepeatableDocuments } from "utils/queries";
+import { queryRepeatableDocuments } from "../utils/queries";
 
 // Project components
-import DefaultLayout from "layouts";
+import DefaultLayout from "../layouts";
 
 // Project functions & styles
-import { Client } from "utils/prismicHelpers";
+import { Client } from "../utils/prismicHelpers";
 
 /**
  * Post page component

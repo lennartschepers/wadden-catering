@@ -1,6 +1,6 @@
-import Meta from "components/Meta";
-import Footer from "components/Footer";
-import { HeaderMenu } from "components/menu";
+import Meta from "../components/Meta";
+import Footer from "../components/Footer";
+import { HeaderMenu } from "../components/menu";
 import Link from "next/link";
 
 /**
