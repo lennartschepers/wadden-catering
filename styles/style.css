@@ -3,7 +3,8 @@
 @import "tailwindcss/utilities";
 
 h1 {
-  @apply text-5xl;
+  font-family: "Great Vibes", cursive;
+  @apply text-6xl;
   @apply mb-2;
   color: #b19551;
 }
@@ -12,12 +13,12 @@ h2 {
   font-family: "Great Vibes", cursive;
   @apply text-4xl;
   @apply mb-2;
-  color: #826828;
+  color: #b19551;
 }
 
 .alt-font {
   font-family: "Raleway", cursive;
-  color: #826828;
+  color: #b19551;
 }
 
 p {

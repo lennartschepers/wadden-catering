@@ -10,10 +10,10 @@ const Text = ({ slice }) => (
       src="./images/menuBackground.jpg"
       loading="lazy"
 
-      className="absolute w-full h-96 object-cover mb-12 opacity-50"
+      className="absolute w-full h-96 object-cover opacity-50"
     />
     <div className="z-10 pt-12">
-      {RichText.render(slice.primary.titel)}
+      <h1 className="text-white alt-font">{RichText.asText(slice.primary.titel)}</h1>
       <span className="text-white">{RichText.render(slice.primary.tekst)}</span>
     </div>
   </div>

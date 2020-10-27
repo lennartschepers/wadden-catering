@@ -1,5 +1,6 @@
 import React from "react";
 import { RichText } from "prismic-reactjs";
+import Image from 'next/image';
 
 /**
  * Text slice component
@@ -9,11 +10,11 @@ const TextWithImage = ({ slice }) => (
     <div className="col-span-1">
       {slice.items.map((image, index) => {
         return (
-          <img
+             <Image
             className="w-auto hidden md:block"
             alt={image.tekst_fotos.alt}
             loading="lazy"
-
+            unsized
             src={image.tekst_fotos.url}
             key={index}
           />
@@ -21,7 +22,7 @@ const TextWithImage = ({ slice }) => (
       })}
     </div>
     <div className="col-span-2 text-gray-800 leading-relaxed px-8">
-      <h2>{RichText.asText(slice.primary.title)}</h2>
+      <h1 className="mb-4">{RichText.asText(slice.primary.title)}</h1>
       {RichText.render(slice.primary.homepage_tekst)}
     </div>
   </div>
