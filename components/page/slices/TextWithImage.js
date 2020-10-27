@@ -13,7 +13,6 @@ const TextWithImage = ({ slice }) => (
              <Image
             className="w-auto hidden md:block"
             alt={image.tekst_fotos.alt}
-            loading="lazy"
             unsized
             src={image.tekst_fotos.url}
             key={index}

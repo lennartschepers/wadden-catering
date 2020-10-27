@@ -113,7 +113,7 @@ const Meta = () => {
               },
               "name": "Het Raadsel van de Wadden",
               "acceptsReservations": true,
-              "telephone": "06 12069380",
+              "telephone": "+31(0)851309156",
               "url": "https://restaurantlauwersmeer.nl"
             }`,
           }}
