@@ -61,8 +61,8 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
       doc,
       pages: pages ? pages.results : [],
       preview,
-      revalidate: 1
     },
+    revalidate: 1
   };
 }
 
