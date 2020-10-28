@@ -15,7 +15,7 @@
     "now": "^20.1.2"
   },
   "scripts": {
-    "dev": "now dev",
+    "dev": "next dev",
     "now-build": "next build",
     "deploy": "now"
   },

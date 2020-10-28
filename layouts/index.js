@@ -6,7 +6,7 @@ import Link from "next/link";
 /**
  * Default layout component
  */
-const DefaultLayout = ({ children, pages }) => (
+const DefaultLayout = ({ children, pages, footer }) => (
   <div>
     <Meta />
     <header className="w-full absolute top-0 left-0 z-50 bg-black text-white bg-opacity-75">
@@ -23,7 +23,7 @@ const DefaultLayout = ({ children, pages }) => (
       </div>
     </header>
     <main>{children}</main>
-    <Footer />
+    <Footer footer={footer} />
   </div>
 );
 

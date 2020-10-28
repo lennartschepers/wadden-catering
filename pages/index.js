@@ -11,10 +11,10 @@ import { Client } from "../utils/prismicHelpers";
 /**
  * Homepage component
  */
-const Home = ({ doc, pages }) => {
+const Home = ({ doc, pages, footer }) => {
   if (doc) {
     return (
-      <DefaultLayout pages={pages}>
+      <DefaultLayout pages={pages} footer={footer}>
         <Head>
           <title>{doc.data.seo_title}</title>
           <meta name="description" content={doc.data.seo_description} />
@@ -34,20 +34,16 @@ const Home = ({ doc, pages }) => {
     );
   }
 
-  // Message when repository has not bee  n setup yet
 };
 
-/**
- * Query the homepage document and blog posts from Prismic when the page is loaded
- */
 export async function getStaticProps({ preview = null, previewData = {} }) {
   const client = Client();
 
-  const { ref } = previewData
-
+  const { ref } = previewData;
 
   // Retrieve the homepage document
   const doc = await client.getSingle("homepage", ref ? { ref } : null);
+  const footer = await client.getSingle("footer", ref ? { ref } : null);
 
   // Retrieve the blog posts organized in descending chronological order
   const pages = await client.query(
@@ -59,6 +55,7 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
   return {
     props: {
       doc,
+      footer,
       pages: pages ? pages.results : [],
       preview,
     },

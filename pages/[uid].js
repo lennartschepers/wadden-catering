@@ -14,10 +14,10 @@ import { Client } from "../utils/prismicHelpers";
 /**
  * Post page component
  */
-const Page = ({ page, pages }) => {
+const Page = ({ page, pages, footer }) => {
   if (page && pages) {
     return (
-      <DefaultLayout pages={pages}>
+      <DefaultLayout pages={pages} footer={footer}>
         <Head>
           <title>{page.data.seo_title}</title>
           <meta property="og:title" content={page.data.seo_title} />
@@ -48,6 +48,8 @@ export async function getStaticProps({
     Prismic.Predicates.at("document.type", "paginas")
   );
 
+  const footer = await client.getSingle("footer", ref ? { ref } : null);
+
   const page = await client.getByUID(
     "paginas",
     params.uid,
@@ -58,6 +60,7 @@ export async function getStaticProps({
     props: {
       preview,
       page,
+      footer,
       pages: pages ? pages.results : [],
     },
     revalidate: 1
