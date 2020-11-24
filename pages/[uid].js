@@ -10,6 +10,7 @@ import DefaultLayout from "../layouts";
 
 // Project functions & styles
 import { Client } from "../utils/prismicHelpers";
+import { RichText } from "prismic-reactjs";
 
 /**
  * Post page component
@@ -26,9 +27,24 @@ const Page = ({ page, pages, footer }) => {
           <meta property="og:image" content={page.data.seo_image.url} />
           <meta property="twitter:title" content={page.data.seo_title} />
           <meta name="twitter:card" content="summary" />
-          <meta property="twitter:description" content={page.data.seo_description} />
+          <meta
+            property="twitter:description"
+            content={page.data.seo_description}
+          />
           <meta property="twitter:image" content={page.data.seo_image.url} />
         </Head>
+        
+        <div className="container mx-auto">
+          {page.data.content && (
+            <div>
+              <h1 className="mt-12 mb-6 font-serif text-5xl text-brown">
+                {RichText.render(page.data.pagina_titel)}
+              </h1>
+              <div className="mb-12">{RichText.render(page.data.content)}</div>
+          </div>
+        )}
+        </div>
+
         <SliceZone sliceZone={page.data.body} />
       </DefaultLayout>
     );
@@ -63,7 +79,7 @@ export async function getStaticProps({
       footer,
       pages: pages ? pages.results : [],
     },
-    revalidate: 1
+    revalidate: 1,
   };
 }
 

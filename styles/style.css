@@ -2,25 +2,44 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-h1 {
-  font-family: "Great Vibes", cursive;
-  @apply text-6xl;
-  @apply mb-2;
-  color: #b19551;
-}
-
-h2 {
-  font-family: "Great Vibes", cursive;
-  @apply text-4xl;
-  @apply mb-2;
-  color: #b19551;
-}
-
-.alt-font {
-  font-family: "Raleway", cursive;
-  color: #b19551;
-}
-
 p {
   @apply mb-2;
+}
+
+a {
+  @apply text-blue-500;
+}
+
+.masonry-with-columns {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  /* Your container needs a fixed height, and it 
+   * needs to be taller than your tallest column. */
+  height: 900px;
+}
+
+.masonry-with-columns > div {
+  width: 32%;
+  margin-bottom: 2%; /* Optional */
+}
+
+/* Re-order items into 3 rows */
+.masonry-with-columns > div:nth-child(3n + 1) {
+  order: 1;
+}
+.masonry-with-columns > div:nth-child(3n + 2) {
+  order: 2;
+}
+.masonry-with-columns > div::nth-child(3n) {
+  order: 3;
+}
+
+/* Force new columns */
+.masonry-with-columns::before,
+.masonry-with-columns::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
 }

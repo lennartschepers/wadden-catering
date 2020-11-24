@@ -24,16 +24,18 @@ const Home = ({ doc, pages, footer }) => {
           <meta property="og:image" content={doc.data.seo_image.url} />
           <meta property="twitter:title" content={doc.data.seo_title} />
           <meta name="twitter:card" content="summary" />
-          <meta property="twitter:description" content={doc.data.seo_description} />
+          <meta
+            property="twitter:description"
+            content={doc.data.seo_description}
+          />
           <meta property="twitter:image" content={doc.data.seo_image.url} />
         </Head>
-    
+
         <SliceZone sliceZone={doc.data.body} />
-        
+
       </DefaultLayout>
     );
   }
-
 };
 
 export async function getStaticProps({ preview = null, previewData = {} }) {
@@ -47,8 +49,9 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
 
   // Retrieve the blog posts organized in descending chronological order
   const pages = await client.query(
-    Prismic.Predicates.at("document.type", "paginas"), {
-      ...(ref ? { ref } : null)
+    Prismic.Predicates.at("document.type", "paginas"),
+    {
+      ...(ref ? { ref } : null),
     }
   );
 
@@ -59,7 +62,7 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
       pages: pages ? pages.results : [],
       preview,
     },
-    revalidate: 1
+    revalidate: 1,
   };
 }
 

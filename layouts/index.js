@@ -9,16 +9,21 @@ import Link from "next/link";
 const DefaultLayout = ({ children, pages, footer }) => (
   <div>
     <Meta />
-    <header className="w-full absolute top-0 left-0 z-50 bg-black text-white bg-opacity-75">
-      <div className="container flex mx-auto py-4 px-4 justify-between">
+    <header className="top-0 w-full bg-white text-">
+      <div className="container absolute z-20 flex items-center justify-between px-4 py-2 mx-auto lg:relative">
         <div>
           <Link href="/">
             <a aria-label="Link naar de homepagina">
-              <img alt="Logo van Het Raadsel van de Wadden" src="/images/logoWit.png" loading="lazy" className="h-12 ml-2 md:ml-0" />
+              <img
+                alt="Logo van Het Raadsel van de Wadden"
+                src="/images/logoRondGoud.png"
+                loading="lazy"
+                className="hidden h-24 ml-2 lg:block md:ml-0"
+              />
             </a>
           </Link>
         </div>
-        
+
         <HeaderMenu pages={pages} />
       </div>
     </header>

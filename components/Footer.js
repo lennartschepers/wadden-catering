@@ -1,4 +1,5 @@
 import React from "react";
+import Maps from "./Maps";
 import { RichText } from "prismic-reactjs";
 
 /**
@@ -8,7 +9,8 @@ const Footer = ({ footer }) => {
   if (footer) {
     return (
       <footer>
-        <div className="bg-darkBrown w-full py-16 text-white text-center leading-loose">
+        <Maps />
+        <div className="w-full py-16 leading-loose text-center text-white bg-darkBrown">
           <div className="container mx-auto">
             <img
               src="/images/logoWit.png"
@@ -17,18 +19,18 @@ const Footer = ({ footer }) => {
               className="h-16 mx-auto mb-12"
             />
 
-            <div className="md:grid grid-cols-3">
+            <div className="grid-cols-3 md:grid">
               <div className="pb-8 md:pb-0">
                 <p className="font-bold">Openingstijden </p>
                 <p>{RichText.asText(footer.data.openingstijden)}</p>
               </div>
               <div className="pb-8 md:pb-0">
                 <p className="font-bold">Locatie</p>
-                <p>{RichText.render(footer.data.locatie)}</p>
+                <p>{RichText.asText(footer.data.locatie)}</p>
               </div>
               <div>
                 <p className="font-bold">Reserveringsnummer</p>
-                <p className="text-brown underline">
+                <p className="underline text-brown">
                   <a
                     href={`${
                       "tel:" + RichText.asText(footer.data.telefoonnummer)
@@ -38,7 +40,7 @@ const Footer = ({ footer }) => {
                   </a>
                 </p>
                 <p className="font-bold">Emailadres</p>
-                <p className="text-brown underline">
+                <p className="underline text-brown">
                   <a
                     href={`${
                       "mailto:" + RichText.asText(footer.data.mailadres)
