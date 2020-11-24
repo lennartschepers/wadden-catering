@@ -9,8 +9,8 @@ import Link from "next/link";
 const DefaultLayout = ({ children, pages, footer }) => (
   <div>
     <Meta />
-    <header className="top-0 w-full bg-white text-">
-      <div className="container absolute z-20 flex items-center justify-between px-4 py-2 mx-auto lg:relative">
+    <header className="absolute top-0 z-20 w-full lg:bg-white lg:relative text-">
+      <div className="container z-20 flex items-center justify-between px-4 py-2 mx-auto lg:relative">
         <div>
           <Link href="/">
             <a aria-label="Link naar de homepagina">
@@ -18,7 +18,7 @@ const DefaultLayout = ({ children, pages, footer }) => (
                 alt="Logo van Het Raadsel van de Wadden"
                 src="/images/logoRondGoud.png"
                 loading="lazy"
-                className="hidden h-24 ml-2 lg:block md:ml-0"
+                className="h-24 ml-2 md:ml-0"
               />
             </a>
           </Link>

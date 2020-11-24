@@ -11,7 +11,7 @@ const HeaderMenu = ({ pages }) => {
       <div>
         <button
           onClick={() => setToggleClass(true)}
-          className="h-full px-4 py-4 text-white border border-white rounded-md md:px-0 lg:text-black md:hidden"
+          className="h-full px-4 py-4 text-white border border-white rounded-md bg-brown md:px-0 lg:text-black md:hidden"
         >
           Menu
         </button>
