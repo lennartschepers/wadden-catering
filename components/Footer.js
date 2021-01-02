@@ -19,7 +19,7 @@ const Footer = ({ footer }) => {
               className="h-16 mx-auto mb-12"
             />
 
-            <div className="grid-cols-3 md:grid">
+            <div className="grid-cols-3 gap-8 md:grid">
               <div className="pb-8 md:pb-0">
                 <p className="font-bold">Openingstijden </p>
                 <p>{RichText.asText(footer.data.openingstijden)}</p>

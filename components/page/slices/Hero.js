@@ -14,11 +14,11 @@ const Hero = ({ slice }) => (
       className="top-0 left-0 object-cover w-full h-full opacity-50"
     />
 
-    <div className="z-10 flex flex-col items-center justify-center w-11/12 h-screen leading-loose text-center text-white lg:h-auto lg:py-64 md:w-1/2">
+    <div className="z-10 flex flex-col items-center justify-center w-11/12 py-12 leading-loose text-center text-white lg:py-64 md:w-1/2">
       <div>
         <img
-          src="../images/logoRondWit.png"
-          className="h-48 mx-auto lg:hidden"
+          src="../images/RVDWWitRond.png"
+          className="h-32 mx-auto lg:h-48 lg:hidden"
         />
         <h2 className="mb-4 font-serif text-4xl text-white">
           {RichText.asText(slice.primary.header_titel)}

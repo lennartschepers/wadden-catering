@@ -5,13 +5,13 @@ import { RichText } from "prismic-reactjs";
  * Text slice component
  */
 const Text = ({ slice }) => (
-  <div className="relative flex items-center justify-center w-full text-center h-96 bg-darkBrown">
+  <div className="relative flex items-center justify-center w-full text-center bg-darkBrown">
     <img
       src="./images/menuBackground.jpg"
       loading="lazy"
-      className="absolute object-cover w-full opacity-50 h-96"
+      className="absolute object-cover w-full h-full opacity-50"
     />
-    <div className="z-10 py-12">
+    <div className="z-10 w-10/12 py-12 lg:py-24">
       <h1 className="mb-4 font-serif text-5xl text-white">
         {RichText.asText(slice.primary.titel)}
       </h1>

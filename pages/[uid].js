@@ -34,11 +34,11 @@ const Page = ({ page, pages, footer }) => {
           <meta property="twitter:image" content={page.data.seo_image.url} />
         </Head>
         
-        <div className="container pt-4 mx-auto mt-24">
+        <div className="container mx-auto">
           {page.data.content.length !== 0 && (
             <div>
-              <h1 className="mt-12 mb-6 font-serif text-5xl text-brown">
-                {RichText.render(page.data.pagina_titel)}
+              <h1 className="mt-4 mb-6 font-serif text-5xl text-brown">
+                {RichText.asText(page.data.pagina_titel)}
               </h1>
               <div className="mb-12">{RichText.render(page.data.content)}</div>
           </div>
