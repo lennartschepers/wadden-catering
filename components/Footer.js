@@ -10,7 +10,7 @@ const Footer = ({ footer }) => {
     return (
       <footer>
         <Maps />
-        <div className="w-full py-16 leading-loose text-center text-white bg-darkBrown">
+        <div className="w-full py-16 leading-loose text-center text-white content-auto bg-darkBrown">
           <div className="container mx-auto">
             <img
               src="/images/logoWit.png"

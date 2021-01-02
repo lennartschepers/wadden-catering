@@ -3,7 +3,7 @@ import { Component } from "react";
 class Map extends Component {
   render() {
     return (
-      <div className="w-full bg-gray-50">
+      <div className="w-full content-auto bg-gray-50">
         <iframe
           width="100%"
           height="450"

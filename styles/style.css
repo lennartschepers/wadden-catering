@@ -72,6 +72,10 @@ a {
   @apply text-blue-500;
 }
 
+.content-auto {
+  content-visibility: auto;
+}
+
 .masonry-with-columns {
   display: flex;
   flex-flow: column wrap;
