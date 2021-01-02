@@ -9,15 +9,32 @@ const Meta = () => {
     <Fragment>
       <Head>
         <meta charSet="utf-8" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
         <link
-          href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="/fonts/pt-serif-v12-latin-regular.ttf"
+          as="font"
+          crossOrigin=""
         />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="/fonts/pt-serif-v12-latin-700.ttf"
+          as="font"
+          crossOrigin=""
+        />
+
+        <link
+          rel="preload"
+          href="/fonts/pt-sans-v12-latin-regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/pt-sans-v12-latin-700.ttf"
+          as="font"
+          crossOrigin=""
         />
 
         <script
@@ -37,7 +54,7 @@ const Meta = () => {
         />
         <meta
           name="description"
-          content="Restaurant Het Raadsel van de Wadden"
+          content="Met regionale specialiteiten en klassiekers verwennen we u in ons restaurant met daarbijhorende serre en terras – met uitzicht over de jachthaven en het Lauwersmeer."
         />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
@@ -78,7 +95,7 @@ const Meta = () => {
         />
         <meta
           name="twitter:description"
-          content="Restaurant Het Raadsel van de Wadden"
+          content="Met regionale specialiteiten en klassiekers verwennen we u in ons restaurant met daarbijhorende serre en terras – met uitzicht over de jachthaven en het Lauwersmeer."
         />
         <meta
           name="twitter:image"
@@ -91,7 +108,7 @@ const Meta = () => {
         />
         <meta
           property="og:description"
-          content="Restaurant Het Raadsel van de Wadden"
+          content="Met regionale specialiteiten en klassiekers verwennen we u in ons restaurant met daarbijhorende serre en terras – met uitzicht over de jachthaven en het Lauwersmeer."
         />
         <meta
           property="og:site_name"
