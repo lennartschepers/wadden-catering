@@ -12,27 +12,27 @@ const Meta = () => {
 
         <link
           rel="preload"
-          href="/fonts/pt-serif-v12-latin-regular.ttf"
+          href="/fonts/pt-serif-v12-latin-regular.woff2"
           as="font"
           crossOrigin=""
         />
 
         <link
           rel="preload"
-          href="/fonts/pt-serif-v12-latin-700.ttf"
+          href="/fonts/pt-serif-v12-latin-700.woff2"
           as="font"
           crossOrigin=""
         />
 
         <link
           rel="preload"
-          href="/fonts/pt-sans-v12-latin-regular.ttf"
+          href="/fonts/pt-sans-v12-latin-regular.woff2"
           as="font"
           crossOrigin=""
         />
         <link
           rel="preload"
-          href="/fonts/pt-sans-v12-latin-700.ttf"
+          href="/fonts/pt-sans-v12-latin-700.woff2"
           as="font"
           crossOrigin=""
         />
