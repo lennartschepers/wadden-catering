@@ -4,46 +4,41 @@
 
 /* pt-serif-regular - latin */
 @font-face {
-  font-family: 'PT Serif';
+  font-family: "PT Serif";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('/fonts/pt-serif-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/pt-serif-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+  font-display: optional;
+  src: url("/fonts/pt-serif-v12-latin-regular.woff2") format("woff2"),
+    url("/fonts/pt-serif-v12-latin-regular.woff") format("woff");
 }
 
 /* pt-serif-700 - latin */
 @font-face {
-    font-family: 'PT Serif';
+  font-family: "PT Serif";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('/fonts/pt-serif-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/pt-serif-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+  font-display: optional;
+  src: url("/fonts/pt-serif-v12-latin-700.woff2") format("woff2"),
+    url("/fonts/pt-serif-v12-latin-700.woff") format("woff");
 }
 
 /* pt-sans-regular - latin */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('/fonts/pt-sans-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/pt-sans-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+  font-display: optional;
+  src: url("/fonts/pt-sans-v12-latin-regular.woff2") format("woff2"),
+    url("/fonts/pt-sans-v12-latin-regular.woff") format("woff");
 }
 /* pt-sans-700 - latin */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('/fonts/pt-sans-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/pt-sans-v12-latin-700.woff') format('woff'), /* Modern Browsers */
-
+  font-display: optional;
+  src: url("/fonts/pt-sans-v12-latin-700.woff2") format("woff2"),
+    url("/fonts/pt-sans-v12-latin-700.woff") format("woff");
 }
 
 p {

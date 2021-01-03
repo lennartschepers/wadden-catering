@@ -7,8 +7,9 @@ class Map extends Component {
         <iframe
           width="100%"
           height="450"
-          frameBorder="0"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKfHS4d2vyUcR1D55ceCWlf8&key=AIzaSyBtq41T_LBVMPXqJpFGjyOibYumah1-6ZY"
+          frameborder="0"
+          scrolling="no"
+          src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=+(RestaurantHetRaadselVandeWadden)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
       </div>
     );

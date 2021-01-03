@@ -25,7 +25,7 @@ const Menu = ({ slice }) => (
                 {RichText.asText(menu_item.ingredienten)}
               </p>
             </div>
-            <p className="font-semibold alt-font">{menu_item.prijs}</p>
+            <p className="font-serif font-bold">{menu_item.prijs}</p>
           </div>
         ))}
       </section>
