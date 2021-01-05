@@ -17,7 +17,6 @@ const DefaultLayout = ({ children, pages, footer }) => (
               <img
                 alt="Logo van Het Raadsel van de Wadden"
                 src="/images/RVDWGoudRond.png"
-                loading="lazy"
                 className="h-24 ml-2 md:ml-0"
               />
             </a>

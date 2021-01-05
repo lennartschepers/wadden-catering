@@ -12,6 +12,49 @@ const Meta = () => {
 
         <link
           rel="preload"
+          href="/fonts/pt-serif-v12-latin-regular.woff"
+          as="font"
+          data-font-family="PT Serif"
+          data-font-style="regular"
+          data-font-weight="400"
+          type="font/woff"
+          crossOrigin=""
+        />
+
+        <link
+          rel="preload"
+          href="/fonts/pt-serif-v12-latin-700.woff"
+          as="font"
+          data-font-family="PT Serif"
+          data-font-style="bold"
+          data-font-weight="700"
+          type="font/woff"
+          crossOrigin=""
+        />
+
+        <link
+          rel="preload"
+          href="/fonts/pt-sans-v12-latin-regular.woff"
+          as="font"
+          data-font-family="PT Sans"
+          data-font-style="regular"
+          data-font-weight="400"
+          type="font/woff"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/pt-sans-v12-latin-700.woff"
+          as="font"
+          data-font-family="PT Sans"
+          data-font-style="bold"
+          data-font-weight="700"
+          type="font/woff"
+          crossOrigin=""
+        />
+
+        <link
+          rel="preload"
           href="/fonts/pt-serif-v12-latin-regular.woff2"
           as="font"
           data-font-family="PT Serif"
