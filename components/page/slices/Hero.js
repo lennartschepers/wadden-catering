@@ -32,10 +32,7 @@ const Hero = ({ slice }) => (
           {slice.items.map((button, key) => (
             <a
               className="w-32 px-4 py-2 text-gray-900 transition-all duration-200 bg-white rounded-full shadow-xs hover:shadow-lg hover:bg-brown hover:text-white"
-              href={button.buttons[0].spans[0].data.url.replace(
-                /^https?:\/\//,
-                ""
-              )}
+              href={button.buttons[0].spans[0].data.url}
               key={key}
             >
               {button.buttons[0].text}
