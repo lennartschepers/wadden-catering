@@ -27,7 +27,7 @@ const Product = ({ product, pages, footer }) => {
         amount: product?.data?.price,
         quantity: 1,
         product_name: RichText.asText(product.data.product_name),
-        deliver: data.deliverOption,
+        deliver: data.deliveryOption,
         name: data.name,
         email: data.email,
         phone: data.phone,
