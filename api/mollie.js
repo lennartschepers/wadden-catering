@@ -17,7 +17,7 @@ export default async (req, res) => {
         text: req.body.text
       },
       description: req.body.product_name,
-      redirectUrl: "https://rvdw-git-products.frsc.now.sh/betaling?product=" + req.body.product_name,
+      redirectUrl: "https://restaurantlauwersmeer.nl/betaling?product=" + req.body.product_name,
     });
 
     res.send('"' + payment.getCheckoutUrl() + '"');
