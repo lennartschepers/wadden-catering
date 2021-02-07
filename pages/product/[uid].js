@@ -64,7 +64,7 @@ const Product = ({ product, pages, footer }) => {
           <meta property="twitter:image" content={product.data.seo_image.url} />
         </Head>
 
-        <div className={"container mx-auto p-16"}>
+        <div className={"container mx-auto py-4 lg:py-16"}>
           <div className={"flex space-x-8"}>
             <div>
               <h1 className={"text-4xl font-bold font-serif text-brown mb-2"}>
