@@ -78,6 +78,15 @@ const Product = ({ product, pages, footer }) => {
                   Op is op en te bestellen tot 12 februari!
                 </span>
               </div>
+              <div className="object-cover w-full lg:hidden">
+              <Image
+                className="object-cover"
+                alt={product?.data?.product_image?.alt}
+                height={400}
+                width={600}
+                src={product?.data?.product_image?.url}
+              />
+            </div>
               {RichText.render(product.data.product_description)}
               <p className={"text-xl font-bold"}>
                 Bestel nu voor €{product.data.price}
@@ -195,7 +204,7 @@ const Product = ({ product, pages, footer }) => {
                 />
               </form>
             </div>
-            <div className="object-cover w-full md:block">
+            <div className="hidden object-cover w-full lg:block">
               <Image
                 className="object-cover"
                 alt={product?.data?.product_image?.alt}
