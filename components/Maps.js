@@ -7,7 +7,7 @@ class Map extends Component {
         <iframe
           width="100%"
           height="450"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=+(RestaurantHetRaadselVandeWadden)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>

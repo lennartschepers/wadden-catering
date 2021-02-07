@@ -2,3 +2,4 @@
 .next
 .static
 node_modules
+.env

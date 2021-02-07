@@ -1,16 +1,20 @@
 module.exports = {
   important: true,
-  purge: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}", "./layouts/**/*.{js,jsx,ts,tsx}"],
+  purge: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./layouts/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1em'
-      }
+        DEFAULT: "1em",
+      },
     },
     fontFamily: {
-      'sans': ['PT Sans'],
-      'serif': ['PT Serif']
+      sans: ["PT Sans"],
+      serif: ["PT Serif"],
     },
     extend: {
       colors: {
@@ -20,7 +24,7 @@ module.exports = {
       height: {
         "50-screen": "50vh",
         "75-screen": "75vh",
-        "96": "24rem",
+        96: "24rem",
       },
       zIndex: {
         "-1": "-1",
@@ -30,4 +34,5 @@ module.exports = {
   variants: {
     opacity: ["responsive", "hover"],
   },
+  plugins: [require("@tailwindcss/forms")],
 };

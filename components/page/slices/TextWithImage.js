@@ -1,6 +1,5 @@
 import React from "react";
 import { RichText } from "prismic-reactjs";
-import Image from "next/image";
 
 /**
  * Text slice component
