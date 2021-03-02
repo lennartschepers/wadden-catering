@@ -1,6 +1,8 @@
 import React from "react";
 import { RichText } from "prismic-reactjs";
 import Image from "next/image";
+import { useRouter } from 'next/router'
+
 
 /**
  * Text slice component
@@ -32,10 +34,10 @@ const Hero = ({ slice }) => (
           {slice.items.map((button, key) => (
             <a
               className="w-32 px-4 py-2 text-gray-900 transition-all duration-200 bg-white rounded-full shadow-xs hover:shadow-lg hover:bg-brown hover:text-white"
-              href={button.buttons[0].spans[0].data.url}
+              href={button.button_link}
               key={key}
             >
-              {button.buttons[0].text}
+              {button.button_text}
             </a>
           ))}
         </div>
