@@ -40,7 +40,7 @@ const Page = ({ page, pages, footer }) => {
               <h1 className="mt-4 mb-6 font-serif text-5xl text-brown">
                 {RichText.asText(page.data.pagina_titel)}
               </h1>
-              <div className="mb-12">{RichText.render(page.data.content)}</div>
+              <div className="mb-12 prose max-w-none">{RichText.render(page.data.content)}</div>
           </div>
         )}
         </div>
