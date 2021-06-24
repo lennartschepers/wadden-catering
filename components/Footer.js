@@ -59,7 +59,7 @@ const Footer = ({ footer }) => {
           }}
         />
         <div
-          class="ft-widget-b2"
+          className="ft-widget-b2"
           data-restaurant="618e6e7e"
           data-open="1500"
           data-open-mobile="false"

@@ -23,7 +23,7 @@ const Hero = ({ slice }) => (
           className="h-32 mx-auto lg:h-48 lg:hidden"
           alt="Raadsel van de Wadden Logo"
         />
-        <h2 className="mb-4 font-serif text-4xl text-white">
+        <h2 className="mb-4 font-serif font-bold text-4xl text-white">
           {RichText.asText(slice.primary.header_titel)}
         </h2>
         <span className="text-md lg:text-lg">
