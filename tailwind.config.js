@@ -23,8 +23,6 @@ module.exports = {
         darkBrown: "#131313",
       },
       height: {
-        "50-screen": "50vh",
-        "75-screen": "75vh",
         96: "24rem",
       },
       zIndex: {
