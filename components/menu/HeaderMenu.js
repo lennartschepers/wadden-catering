@@ -1,10 +1,19 @@
 import React from "react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { RichText } from "prismic-reactjs";
+import { useRouter } from "next/router";
 
 const HeaderMenu = ({ pages }) => {
-  const [toggleClass, setToggleClass] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (toggleClass) {
+      setToggleClass(false);
+    }
+  }, [router.asPath]);
+
+const [toggleClass, setToggleClass] = useState(false);
 
   if (pages) {
     return (
