@@ -13,6 +13,7 @@ const Hero = ({ slice }) => (
       layout="fill"
       src={slice.primary.homepage_header.hero.url}
       alt={slice.primary.homepage_header.alt}
+      priority="high"
       className="top-0 left-0 object-cover w-full h-full opacity-50"
     />
 

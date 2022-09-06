@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import Head from "next/head";
+import Script from 'next/script'
+
 
 /**
  * Meta data component
@@ -96,10 +98,10 @@ const Meta = () => {
           crossOrigin=""
         />
 
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-GDY9MLM5YT"
-        ></script>
+        />
 
         <meta
           name="application-name"
@@ -179,7 +181,7 @@ const Meta = () => {
           content="https://restaurantlauwersmeer.nl/icons/apple-icon.png"
         />
 
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: `
@@ -206,7 +208,7 @@ const Meta = () => {
           }}
         />
 
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];

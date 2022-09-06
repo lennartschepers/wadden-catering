@@ -1,6 +1,7 @@
 import React from "react";
 import Maps from "./Maps";
 import { RichText } from "prismic-reactjs";
+import Script from "next/script";
 
 /**
  * Site footer component
@@ -53,7 +54,7 @@ const Footer = ({ footer }) => {
             </div>
           </div>
         </div>
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `(function (d, s, id, h) { var ftjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; var js = d.createElement(s); js.id = id; js.src = "https://cdn.formitable.com/sdk/v1/ft.sdk.min.js"; h && (js.onload = h); ftjs.parentNode.insertBefore(js, ftjs); }(document, 'script', 'formitable-sdk', function () { FT.load('Analytics'); })); `,
           }}
