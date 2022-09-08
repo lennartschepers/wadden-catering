@@ -1,0 +1,12 @@
+import MyComponent from '../../../../slices/Hero';
+
+export default {
+  title: 'slices/Hero'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"title":[{"type":"heading1","text":"Object","spans":[]}],"description":[{"type":"paragraph","text":"Et ad enim sint.","spans":[]}],"background":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"}},"slice_type":"hero","id":"_Default"}} />
+_Default.storyName = ''
+
+export const _Homepage = () => <MyComponent slice={{"variation":"homepage","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"title":[{"type":"heading1","text":"Prepare","spans":[]}],"description":[{"type":"paragraph","text":"Laborum laboris duis aliqua ea. Consectetur eiusmod elit labore mollit duis ex culpa adipisicing magna adipisicing nisi.","spans":[]}],"background":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1589652717521-10c0d092dea9"}},"slice_type":"hero","id":"_Homepage"}} />
+_Homepage.storyName = ''

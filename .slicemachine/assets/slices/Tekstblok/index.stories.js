@@ -1,0 +1,12 @@
+import MyComponent from '../../../../slices/Tekstblok';
+
+export default {
+  title: 'slices/Tekstblok'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"align":"Links","title":[{"type":"heading2","text":"Present","spans":[]}],"description":[{"type":"heading2","text":"Realize","spans":[]},{"type":"paragraph","text":"Esse anim tempor anim laboris qui proident culpa ex ex reprehenderit ut anim.","spans":[]},{"type":"heading2","text":"Office","spans":[]},{"type":"paragraph","text":"Qui eu nisi consectetur amet non.","spans":[]},{"type":"heading2","text":"Whatever","spans":[]},{"type":"paragraph","text":"Id in mollit sit id sint elit voluptate.","spans":[]}]},"slice_type":"tekstblok","id":"_Default"}} />
+_Default.storyName = ''
+
+export const _Textwithbutton = () => <MyComponent slice={{"variation":"textwithbutton","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"align":"Links","title":[{"type":"heading1","text":"Press","spans":[]}],"description":[{"type":"paragraph","text":"Sint non nostrud laborum quis do labore non aliqua nisi.","spans":[]}],"button_text":"written","button":{"link_type":"Web","url":"http://google.com"},"button_color":"#5b2d45"},"slice_type":"tekstblok","id":"_Textwithbutton"}} />
+_Textwithbutton.storyName = ''

@@ -1,69 +1,31 @@
-import React from "react";
-import Head from "next/head";
-import Prismic from "prismic-javascript";
+import { SliceZone } from '@prismicio/react'
 
-import { SliceZone } from "../components/page";
+import { createClient } from '../prismicio'
+import { components } from '../slices'
+import { Layout } from "../components/Layout";
 
-// Project components & functions
-import DefaultLayout from "../layouts";
-import { Client } from "../utils/prismicHelpers";
+const Page = ({ page, pages, footer }) => {
+  return (
+    <Layout page={page} pages={pages} footer={footer}>
+      <SliceZone slices={page.data.body} components={components} />
+    </Layout>
+  )
+}
 
-/**
- * Homepage component
- */
-const Home = ({ doc, pages, footer }) => {
-  if (doc) {
-    return (
-      <DefaultLayout pages={pages} footer={footer}>
-        <Head>
-          <title>{doc.data.seo_title}</title>
-          <meta name="description" content={doc.data.seo_description} />
-          <meta property="og:title" content={doc.data.seo_title} />
-          <meta property="og:type" content="restaurant" />
-          <meta property="og:description" content={doc.data.seo_description} />
-          <meta property="og:image" content={doc.data.seo_image.url} />
-          <meta property="twitter:title" content={doc.data.seo_title} />
-          <meta name="twitter:card" content="summary" />
-          <meta
-            property="twitter:description"
-            content={doc.data.seo_description}
-          />
-          <meta property="twitter:image" content={doc.data.seo_image.url} />
-        </Head>
+export default Page
 
-        <SliceZone sliceZone={doc.data.body} />
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData })
 
-      </DefaultLayout>
-    );
-  }
-};
-
-export async function getStaticProps({ preview = null, previewData = {} }) {
-  const client = Client();
-
-  const { ref } = previewData;
-
-  // Retrieve the homepage document
-  const doc = await client.getSingle("homepage", ref ? { ref } : null);
-  const footer = await client.getSingle("footer", ref ? { ref } : null);
-
-  // Retrieve the blog posts organized in descending chronological order
-  const pages = await client.query(
-    Prismic.Predicates.at("document.type", "paginas"),
-    {
-      ...(ref ? { ref } : null),
-    }
-  );
+  const page = await client.getSingle('homepage');
+  const footer = await client.getSingle("footer");
+  const pages = await client.getAllByType('paginas')
 
   return {
     props: {
-      doc,
+      page,
       footer,
-      pages: pages ? pages.results : [],
-      preview,
+      pages
     },
-    revalidate: 1,
-  };
+  }
 }
-
-export default Home;

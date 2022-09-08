@@ -1,0 +1,234 @@
+{
+  "id": "homepage",
+  "label": "Homepage",
+  "repeatable": false,
+  "hash": "5fe9b3116e707e65a0db80990e4d8225",
+  "status": true,
+  "json": {
+    "Main": {
+      "page_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label": "Page Title"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hero": {
+              "type": "Slice",
+              "fieldset": "Hero",
+              "description": "De bovenkant van de website",
+              "icon": "collections",
+              "display": "list",
+              "non-repeat": {
+                "homepage_header": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": null,
+                      "height": null
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "hero",
+                        "width": 1800,
+                        "height": 800
+                      }
+                    ],
+                    "label": "Homepage Header"
+                  }
+                },
+                "header_titel": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Header titel"
+                  }
+                },
+                "header_tekst": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em",
+                    "label": "Header tekst"
+                  }
+                }
+              },
+              "repeat": {
+                "button_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Text"
+                  }
+                },
+                "button_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Link"
+                  }
+                }
+              }
+            },
+            "tekst_met_foto": {
+              "type": "Slice",
+              "fieldset": "Tekst met foto",
+              "description": "Content van de homepagina",
+              "icon": "view_carousel",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                    "label": "title"
+                  }
+                },
+                "homepage_tekst": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em",
+                    "label": "Homepage tekst"
+                  }
+                }
+              },
+              "repeat": {
+                "tekst_fotos": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 600,
+                      "height": 600
+                    },
+                    "thumbnails": [],
+                    "label": "Tekst fotos"
+                  }
+                }
+              }
+            },
+            "promo_item": {
+              "type": "Slice",
+              "fieldset": "Promo Item",
+              "description": "Bijvoorbeeld een actie van de week",
+              "icon": "tag_faces",
+              "display": "list",
+              "non-repeat": {
+                "foto": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [],
+                    "label": "Foto"
+                  }
+                },
+                "titel": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Titel"
+                  }
+                },
+                "omschrijving": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "label": "Omschrijving"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "foto_galerij": {
+              "type": "Slice",
+              "fieldset": "Foto Galerij",
+              "description": "Meerdere foto's vertoond in een grid",
+              "icon": "photo_library",
+              "display": "grid",
+              "non-repeat": {},
+              "repeat": {
+                "foto": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [
+                      {
+                        "name": "formatted",
+                        "width": 600,
+                        "height": 800
+                      }
+                    ],
+                    "label": "Foto"
+                  }
+                }
+              }
+            },
+            "pagina_introductie": {
+              "type": "Slice",
+              "fieldset": "Pagina Introductie",
+              "description": "Bijvoorbeeld voor de over ons pagina",
+              "icon": "short_text",
+              "display": "list",
+              "non-repeat": {
+                "titel": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                    "label": "titel"
+                  }
+                },
+                "korte_tekst": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "label": "Korte tekst"
+                  }
+                },
+                "link_tekst": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link tekst"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "select": null
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "seo_title": {
+        "type": "Text",
+        "config": {
+          "label": "SEO Title"
+        }
+      },
+      "seo_description": {
+        "type": "Text",
+        "config": {
+          "label": "SEO Description"
+        }
+      },
+      "seo_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1200,
+            "height": 630
+          },
+          "thumbnails": [],
+          "label": "SEO Image"
+        }
+      }
+    }
+  }
+}

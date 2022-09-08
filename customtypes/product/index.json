@@ -1,0 +1,126 @@
+{
+  "id": "product",
+  "label": "Product",
+  "repeatable": true,
+  "hash": "b0526e0bc599dc6046a5ff58e9dad49a",
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid"
+        }
+      },
+      "product_name": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Product name"
+        }
+      },
+      "price": {
+        "type": "Text",
+        "config": {
+          "label": "Price"
+        }
+      },
+      "product_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "Product Description"
+        }
+      },
+      "product_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Product image"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "delivery_options": {
+              "type": "Slice",
+              "fieldset": "Delivery Options",
+              "description": "Add a delivery option",
+              "icon": "face",
+              "display": "list",
+              "non-repeat": {
+                "type": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Afhaal",
+                      "Bezorgen"
+                    ],
+                    "label": "Type"
+                  }
+                },
+                "location": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Location"
+                  }
+                }
+              },
+              "repeat": {
+                "datum": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "label": "Datum"
+                  }
+                },
+                "starttijd": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Starttijd"
+                  }
+                },
+                "eindtijd": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph",
+                    "label": "Eindtijd"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "seo_title": {
+        "type": "Text",
+        "config": {
+          "label": "SEO Title"
+        }
+      },
+      "seo_description": {
+        "type": "Text",
+        "config": {
+          "label": "SEO Description"
+        }
+      },
+      "seo_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1200,
+            "height": 630
+          },
+          "thumbnails": [],
+          "label": "SEO Image"
+        }
+      }
+    }
+  }
+}

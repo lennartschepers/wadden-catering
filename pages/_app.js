@@ -1,20 +1,22 @@
 import "../styles/style.css";
+import Link from 'next/link'
+import { PrismicProvider } from '@prismicio/react'
+import { PrismicPreview } from '@prismicio/next'
+import { linkResolver, repositoryName } from '../prismicio'
 
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function App({ Component, pageProps }) {
+  return (
+    <PrismicProvider
+      linkResolver={linkResolver}
+      internalLinkComponent={({ href, ...props }) => (
+        <Link href={href}>
+          <a {...props} />
+        </Link>
+      )}
+    >
+      <PrismicPreview repositoryName={repositoryName}>
+        <Component {...pageProps} />
+      </PrismicPreview>
+    </PrismicProvider>
+  )
 }
-
-// Only uncomment this method if you have blocking data requirements for
-// every single page in your application. This disables the ability to
-// perform automatic static optimization, causing every page in your app to
-// be server-side rendered.
-//
-// MyApp.getInitialProps = async (appContext) => {
-//   // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
-//
-//   return { ...appProps }
-// }
-
-export default MyApp;

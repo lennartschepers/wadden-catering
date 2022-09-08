@@ -1,0 +1,28 @@
+{
+  "id": "foto_galerij",
+  "type": "SharedSlice",
+  "name": "Photogallery",
+  "description": "Photogallery",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Photogallery",
+      "primary": {},
+      "items": {
+        "foto": {
+          "type": "Image",
+          "config": {
+            "label": "Foto",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}
+

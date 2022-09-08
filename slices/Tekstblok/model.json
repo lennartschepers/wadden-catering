@@ -1,0 +1,114 @@
+{
+  "id": "tekstblok",
+  "type": "SharedSlice",
+  "name": "Tekstblok",
+  "description": "Tekstblok",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Tekstblok",
+      "primary": {
+        "align": {
+          "type": "Select",
+          "config": {
+            "label": "Uitlijning",
+            "placeholder": "",
+            "options": [
+              "Links",
+              "Midden",
+              "Rechts"
+            ],
+            "default_value": "Links"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "textwithbutton",
+      "name": "Tekstblok - Met Knop",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Tekstblok",
+      "primary": {
+        "align": {
+          "type": "Select",
+          "config": {
+            "label": "Uitlijning",
+            "placeholder": "",
+            "options": [
+              "Links",
+              "Midden",
+              "Rechts"
+            ],
+            "default_value": "Links"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "button_text": {
+          "type": "Text",
+          "config": {
+            "label": "Knop tekst",
+            "placeholder": ""
+          }
+        },
+        "button": {
+          "type": "Link",
+          "config": {
+            "label": "Knop",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "button_color": {
+          "type": "Color",
+          "config": {
+            "label": "Knop kleur",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

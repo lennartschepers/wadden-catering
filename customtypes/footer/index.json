@@ -1,0 +1,39 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "hash": "1a4c996684d1b1c79e7fe0724bcbbe1c",
+  "status": true,
+  "json": {
+    "Main": {
+      "openingstijden": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Openingstijden"
+        }
+      },
+      "locatie": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Locatie"
+        }
+      },
+      "telefoonnummer": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph",
+          "label": "Telefoonnummer"
+        }
+      },
+      "mailadres": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Mailadres"
+        }
+      }
+    }
+  }
+}

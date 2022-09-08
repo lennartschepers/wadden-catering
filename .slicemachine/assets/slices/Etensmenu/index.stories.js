@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/Etensmenu';
+
+export default {
+  title: 'slices/Etensmenu'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"name":[{"type":"paragraph","text":"Commodo fugiat proident irure exercitation culpa aliquip mollit voluptate reprehenderit mollit anim id dolore. In pariatur consectetur anim. Aliqua irure magna pariatur consequat in fugiat occaecat id velit.","spans":[]}],"ingredients":[{"type":"paragraph","text":"Eu aliquip culpa labore eu adipisicing eu minim magna ea. Duis aliquip minim ex.","spans":[]}],"price":[{"type":"paragraph","text":"Do culpa mollit sunt proident enim veniam et amet est reprehenderit sit. Duis id ex deserunt sint id sit labore Lorem. Enim magna veniam do Lorem cupidatat eu qui aute dolor proident.","spans":[]}]}],"primary":{"title":[{"type":"heading2","text":"Floor","spans":[]}],"description":[{"type":"paragraph","text":"Tempor anim et magna aliqua tempor eiusmod voluptate dolore fugiat sit sint elit aliqua. Qui id laboris ad laborum cupidatat pariatur nisi officia cupidatat fugiat ipsum ad. Ullamco consequat esse Lorem consectetur eu fugiat irure irure aliquip consectetur id aliqua.","spans":[]}]},"slice_type":"menu","id":"_Default"}} />
+_Default.storyName = ''
