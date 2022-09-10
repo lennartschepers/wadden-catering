@@ -27,5 +27,6 @@ export async function getStaticProps({ previewData }) {
       footer,
       pages
     },
+    revalidate: 10
   }
 }
