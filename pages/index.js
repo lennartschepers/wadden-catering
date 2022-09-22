@@ -4,9 +4,9 @@ import { createClient } from '../prismicio'
 import { components } from '../slices'
 import { Layout } from "../components/Layout";
 
-const Page = ({ page, pages, footer }) => {
+const Page = ({ page, menu, footer }) => {
   return (
-    <Layout page={page} pages={pages} footer={footer}>
+    <Layout page={page} menu={menu} footer={footer}>
       <SliceZone slices={page.data.body} components={components} />
     </Layout>
   )
@@ -19,13 +19,13 @@ export async function getStaticProps({ previewData }) {
 
   const page = await client.getSingle('homepage');
   const footer = await client.getSingle("footer");
-  const pages = await client.getAllByType('paginas')
+  const menu = await client.getAllByType('navigation');
 
   return {
     props: {
       page,
       footer,
-      pages
+      menu
     },
     revalidate: 10
   }

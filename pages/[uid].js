@@ -6,9 +6,9 @@ import * as prismicH from '@prismicio/helpers'
 import { Layout } from "../components/Layout";
 
 
-const Page = ({ page, pages, footer }) => {
+const Page = ({ page, menu, footer }) => {
   return (
-  <Layout page={page} pages={pages} footer={footer}>
+  <Layout page={page} menu={menu} footer={footer}>
      <div className="container mx-auto">
           {page.data.content.length !== 0 ?
             <div>
@@ -33,13 +33,13 @@ export async function getStaticProps({ params, previewData }) {
 
   const page = await client.getByUID('paginas', params.uid);
   const footer = await client.getSingle("footer");
-  const pages = await client.getAllByType('paginas');
+  const menu = await client.getAllByType('navigation');
 
 
   return {
     props: {
       page,
-      pages,
+      menu,
       footer
     },
     revalidate: 10
