@@ -45,7 +45,7 @@ const HeaderMenu = ({ menu }) => {
           <nav className="h-full">
             <ul className="flex h-full flex-col space-y-6 lg:space-x-12 lg:items-center lg:space-y-0 lg:flex-row">
               {menuItems.map((item) => (
-                <li className="lg:group relative lg:h-full " key={`${item.primary.uid}`}>
+                <li className="group relative lg:h-full " key={`${item.primary.uid}`}>
                   {item?.primary?.link?.link_type === 'Document' 
                   ?
                     <PrismicLink field={item.primary.link} className="text-gray-600 lg:h-full inline-flex items-center hover:underline">
@@ -57,7 +57,7 @@ const HeaderMenu = ({ menu }) => {
                     </span>
                   }
                   {item.items[0]?.sub_nav_link_label?.length > 0 && (
-                    <ul className="mt-4 lg:absolute lg:hidden lg:object-right-bottom lg:group-hover:block lg:bg-white lg:py-3 px-5 lg:rounded-b-lg lg:border-t lg:border-brown lg:shadow-lg min-w-[200px]">
+                    <ul className="mt-4 lg:absolute lg:hidden lg:object-right-bottom group-hover:lg:block lg:bg-white lg:py-3 px-5 lg:rounded-b-lg lg:border-t lg:border-brown lg:shadow-lg min-w-[200px]">
                       {item.items.map((item) => (
                         <li className="flex gap-2 lg:gap-0 lg:block" key={`${item.sub_nav_link_label}`}>
                          <span>- </span> <PrismicLink field={item.sub_nav_link} className="text-gray-600 hover:underline whitespace-nowrap">
