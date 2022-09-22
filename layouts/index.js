@@ -10,18 +10,15 @@ const DefaultLayout = ({ children, menu, footer }) => (
   <div>
     <Meta />
     <header className="z-20 w-full border-b border-gray-200 border-solid lg:bg-white">
-      <div className="container z-20 flex items-center justify-between px-4 py-2 mx-auto lg:relative">
-        
+      <div className="container z-20 flex flex-row items-center lg:items-stretch justify-between px-4 mx-auto lg:relative">
           <Link href="/">
               <img
-                alt="Logo van Het Raadsel van de Wadden"
-                src="/images/RVDWGoudRond.png"
-                className="h-24 ml-2 md:ml-0 cursor-pointer"
+                  alt="Logo van Het Raadsel van de Wadden"
+                  src="/images/RVDWGoudRond.png"
+                  className="h-24 ml-2 my-2 md:ml-0 cursor-pointer"
               />
           </Link>
-
-        <HeaderMenu menu={menu} />
-        
+          <HeaderMenu menu={menu} />
       </div>
     </header>
     <main>{children}</main>

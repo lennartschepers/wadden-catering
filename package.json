@@ -27,14 +27,14 @@
     "react-hook-form": "^7.9.0",
     "react-map-gl": "^7.0.19",
     "sass": "^1.32.8",
-    "vercel": "^28.2.2"
+    "vercel": "^19.1.2"
   },
   "devDependencies": {
     "@types/node": "^18.7.15",
     "@types/react": "^18.0.18",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
-    "autoprefixer": "10.4.5",
+    "autoprefixer": "^10.4.12",
     "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^8.4.1",
     "eslint-config-airbnb": "^19.0.2",

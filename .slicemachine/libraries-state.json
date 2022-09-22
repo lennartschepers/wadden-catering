@@ -125,65 +125,6 @@
         },
         "screenshotPaths": {}
       },
-      "fotogalerij": {
-        "library": "slices",
-        "id": "fotogalerij",
-        "name": "Fotogalerij",
-        "description": "Fotogalerij",
-        "model": {
-          "id": "fotogalerij",
-          "type": "SharedSlice",
-          "name": "Fotogalerij",
-          "description": "Fotogalerij",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "Fotogalerij",
-              "primary": {},
-              "items": {
-                "foto": {
-                  "type": "Image",
-                  "config": {
-                    "label": "Foto",
-                    "constraint": {},
-                    "thumbnails": []
-                  }
-                }
-              },
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {
-                "foto": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": null,
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890"
-                }
-              }
-            ],
-            "primary": {},
-            "slice_type": "fotogalerij"
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "js"
-        },
-        "screenshotPaths": {}
-      },
       "hero": {
         "library": "slices",
         "id": "hero",
@@ -337,6 +278,65 @@
               }
             },
             "slice_type": "hero"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "foto_galerij": {
+        "library": "slices",
+        "id": "foto_galerij",
+        "name": "Photogallery",
+        "description": "Photogallery",
+        "model": {
+          "id": "foto_galerij",
+          "type": "SharedSlice",
+          "name": "Photogallery",
+          "description": "Photogallery",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Photogallery",
+              "primary": {},
+              "items": {
+                "foto": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Foto",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "foto": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
+                }
+              }
+            ],
+            "primary": {},
+            "slice_type": "foto_galerij"
           }
         },
         "meta": {

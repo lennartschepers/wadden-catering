@@ -2,13 +2,18 @@ import { SliceZone } from '@prismicio/react'
 
 import { createClient } from '../prismicio'
 import { components } from '../slices'
-import { Layout } from "../components/Layout";
+import DefaultLayout from "../layouts";
+import Head from "next/head";
 
-const Page = ({ page, menu, footer }) => {
+const Page = ({ metaTitle, metaDescription, page, menu, footer }) => {
   return (
-    <Layout page={page} menu={menu} footer={footer}>
+    <DefaultLayout page={page} menu={menu} footer={footer}>
+      <Head>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+      </Head>
       <SliceZone slices={page.data.body} components={components} />
-    </Layout>
+    </DefaultLayout>
   )
 }
 
@@ -24,6 +29,8 @@ export async function getStaticProps({ previewData }) {
   return {
     props: {
       page,
+      metaTitle: page.data.seo_title,
+      metaDescription: page.data.seo_description,
       footer,
       menu
     },
