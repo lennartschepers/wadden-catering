@@ -38,39 +38,6 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "menu": {
-              "type": "SharedSlice"
-            },
-            "foto_galerij": {
-              "type": "Slice",
-              "fieldset": "Foto galerij",
-              "description": "Een paar foto's die naast elkaar komen te staan",
-              "icon": "face",
-              "display": "grid",
-              "non-repeat": {},
-              "repeat": {
-                "galerij_foto": {
-                  "type": "Image",
-                  "config": {
-                    "constraint": {},
-                    "thumbnails": [
-                      {
-                        "name": "formatted",
-                        "width": 600,
-                        "height": 600
-                      }
-                    ],
-                    "label": "Galerij foto"
-                  }
-                }
-              }
-            },
-            "tekstblok": {
-              "type": "SharedSlice"
-            },
-            "hero": {
-              "type": "SharedSlice"
-            },
             "fotogalerij": {
               "type": "SharedSlice"
             }
