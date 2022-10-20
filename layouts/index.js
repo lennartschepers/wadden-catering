@@ -13,8 +13,8 @@ const DefaultLayout = ({ children, menu, footer }) => (
       <div className="container z-20 flex flex-row items-center lg:items-stretch justify-between px-4 mx-auto lg:relative">
           <Link href="/">
               <img
-                  alt="Logo van Het Raadsel van de Wadden"
-                  src="/images/RVDWGoudRond.png"
+                  alt="Logo van Wadden Catering"
+                  src="/images/wadden-catering-logo.jpeg"
                   className="h-24 ml-2 my-2 md:ml-0 cursor-pointer"
               />
           </Link>
